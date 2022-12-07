@@ -7,9 +7,8 @@ def solve(input_text):
 
     for line in input_lines:
         if line[0] == "$": # line is command
-            cmd = line[2:]
-            if cmd[:2] == "cd":
-                chgdir = cmd[3:]
+            if line[2:4] == "cd":
+                chgdir = line[5:]
                 if chgdir == "..":
                     cnode = cnode.parent
                 elif chgdir == "/":
