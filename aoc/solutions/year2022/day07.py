@@ -1,5 +1,5 @@
 import numpy as np
-from anytree import AnyNode, RenderTree, PreOrderIter
+from anytree import AnyNode, PreOrderIter
 
 def solve(input_text):
     input_lines = input_text.split("\n")[:-1]
