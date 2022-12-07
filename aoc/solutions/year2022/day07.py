@@ -1,4 +1,3 @@
-import numpy as np
 from anytree import AnyNode, PreOrderIter
 
 def solve(input_text):
