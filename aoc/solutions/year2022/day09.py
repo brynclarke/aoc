@@ -1,18 +1,12 @@
-import numpy as np
-
 def solve(input_text):
     commands = [line.split(" ") for line in input_text.splitlines()]
-
-    # key=rope len, value=total visit count
-    tail_visits = {}
+    part_answers = []
 
     for rope_length in [2, 10]:
-        # grid of binary flags for tail visits
-        grid = np.zeros((2000, 2000), bool)
+        tail_visits = []
 
         # list of tuples stores rope unit coordinates (0=lead)
         rope = [(0, 0), ] * rope_length
-        grid[rope[-1]] = True
 
         for (dir, dist) in commands:
             # mx, my = movement of lead rope unit
@@ -55,11 +49,10 @@ def solve(input_text):
                     # move rope unit
                     rope[i] = (rope[i][0] + dx, rope[i][1] + dy)
 
-                # set tail vist grid flag
-                grid[rope[-1]] = True
-
-        # count total tail visit locations        
-        tail_visits[rope_length] = grid.sum()
+                # add coordinates to tail visit list
+                tail_visits.append(rope[-1])
+        
+        part_answers += [len(set(tail_visits))]
 
     # (part1, part2)
-    return tuple(tail_visits.values())
+    return tuple(part_answers)
