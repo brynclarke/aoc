@@ -4,12 +4,8 @@ def solve(input_text):
 
     grid = [[char for char in line] for line in input_text.splitlines()]
 
-    R = len(grid)
-    C = len(grid[0])
-    R, C
-
-    S = None
-    E = None
+    R, C = len(grid), len(grid[0])
+    S, E = None, None
 
     for r in range(R):
         for c in range(C):
