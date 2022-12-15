@@ -1,0 +1,12 @@
+command line usage instructions
+-------------------------------
+aoc\2015> ./get_input.py 6
+aoc\2015> ./aoc.py 6
+Run combined scripts
+Prints test results (blue) and submission results (green) in format part1 part2
+aoc\2015> ./aot.py 6
+Run test script
+Prints test results (blue) in format part1 part2
+aoc\2015> ./aos.py 6
+Run submission script
+Prints submission results (green) in format part1 part2
