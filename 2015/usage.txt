@@ -1,12 +1,17 @@
 command line usage instructions
 -------------------------------
 aoc\2015> ./get_input.py 6
+Download submission input file for day 6
+(requires session cookie saved as environment variable AdventSessionKey)
 aoc\2015> ./aoc.py 6
 Run combined scripts
 Prints test results (blue) and submission results (green) in format part1 part2
+Expects 06.ex and 06.in files (test and submission data files) in same directory
 aoc\2015> ./aot.py 6
 Run test script
 Prints test results (blue) in format part1 part2
+Expects 06.ex file (test data file) in same directory
 aoc\2015> ./aos.py 6
 Run submission script
 Prints submission results (green) in format part1 part2
+Expects 06.in file (submission data file) in same directory
