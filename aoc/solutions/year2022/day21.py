@@ -40,7 +40,7 @@ def solve(input_text):
         if r == 0:
             break
 
-        # use a simple numerican method to find the next guess
+        # use a numerical method to find the next guess
         # (I think this is called Euler's technique? extend x in the direction 
         # and by the amount the slope indicates is needed to reach zero)
         if prior_h is None:
